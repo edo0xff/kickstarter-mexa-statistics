@@ -29,6 +29,18 @@ Ejemplo con mas control:
 .\.venv\Scripts\ks-stats.exe run --top-n 20 --max-pages 6 --max-projects 400 --delay-ms 700
 ```
 
+Exportar a archivo YAML (ideal para integraciones):
+
+```powershell
+.\.venv\Scripts\ks-stats.exe run --output-format yaml --output-file .\artifacts\ks_stats.yaml
+```
+
+Exportar a JSON:
+
+```powershell
+.\.venv\Scripts\ks-stats.exe run --output-format json --output-file .\artifacts\ks_stats.json
+```
+
 Opciones utiles:
 
 - `--top-n`: cantidad N para ambos rankings (default 20).
@@ -38,6 +50,18 @@ Opciones utiles:
 - `--delay-ms`: pausa entre requests para scraping responsable.
 - `--cache-ttl-min`: minutos de vigencia del cache local.
 - `--show-chart/--no-show-chart`: habilita o deshabilita graficas.
+- `--output-format`: `table` (default), `yaml` o `json`.
+- `--output-file`: ruta de archivo para `yaml/json` (si no se indica, se genera en `artifacts/`).
+
+## Integracion con Astro (ejemplo)
+
+Genera un archivo estructurado y consumelo como data source:
+
+```powershell
+.\.venv\Scripts\ks-stats.exe run --output-format yaml --output-file .\src\data\ks_stats.yaml
+```
+
+Luego en Astro puedes leer ese archivo durante build para renderizar tablas, cards o graficas web.
 
 ## Nota tecnica importante
 

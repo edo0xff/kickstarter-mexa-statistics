@@ -1,0 +1,990 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-28T18:51:52.877660+00:00",
+    "country_code": "MX",
+    "category": "Video Games",
+    "project_state": "successful"
+  },
+  "summary": {
+    "total_records": 72,
+    "scoped_records": 70,
+    "top_n": 50
+  },
+  "fx": {
+    "base": "USD",
+    "rates": {
+      "USD": 1.0,
+      "AED": 3.6725,
+      "AFN": 63.485851,
+      "ALL": 81.453692,
+      "AMD": 371.454856,
+      "ANG": 1.79,
+      "AOA": 925.265785,
+      "ARS": 1412.9865,
+      "AUD": 1.391481,
+      "AWG": 1.79,
+      "AZN": 1.700105,
+      "BAM": 1.667591,
+      "BBD": 2.0,
+      "BDT": 122.904025,
+      "BGN": 1.667591,
+      "BHD": 0.376,
+      "BIF": 2981.014848,
+      "BMD": 1.0,
+      "BND": 1.273969,
+      "BOB": 6.909062,
+      "BRL": 4.977365,
+      "BSD": 1.0,
+      "BTN": 94.2825,
+      "BWP": 13.64355,
+      "BYN": 2.811747,
+      "BZD": 2.0,
+      "CAD": 1.362311,
+      "CDF": 2296.730875,
+      "CHF": 0.785011,
+      "CLF": 0.022667,
+      "CLP": 895.957299,
+      "CNH": 6.825655,
+      "CNY": 6.8347,
+      "COP": 3559.229567,
+      "CRC": 455.221364,
+      "CUP": 24.0,
+      "CVE": 94.014785,
+      "CZK": 20.75741,
+      "DJF": 177.721,
+      "DKK": 6.360753,
+      "DOP": 59.495624,
+      "DZD": 132.426977,
+      "EGP": 52.562304,
+      "ERN": 15.0,
+      "ETB": 155.734438,
+      "EUR": 0.852627,
+      "FJD": 2.200963,
+      "FKP": 0.738418,
+      "FOK": 6.360769,
+      "GBP": 0.738414,
+      "GEL": 2.689811,
+      "GGP": 0.738418,
+      "GHS": 11.146981,
+      "GIP": 0.738418,
+      "GMD": 74.179561,
+      "GNF": 8768.755787,
+      "GTQ": 7.642666,
+      "GYD": 209.363615,
+      "HKD": 7.837261,
+      "HNL": 26.565759,
+      "HRK": 6.424109,
+      "HTG": 130.923537,
+      "HUF": 310.36053,
+      "IDR": 17215.946764,
+      "ILS": 2.980935,
+      "IMP": 0.738418,
+      "INR": 94.282715,
+      "IQD": 1309.970316,
+      "IRR": 975561.549636,
+      "ISK": 122.288685,
+      "JEP": 0.738418,
+      "JMD": 157.31447,
+      "JOD": 0.709,
+      "JPY": 159.342314,
+      "KES": 129.23303,
+      "KGS": 87.59246,
+      "KHR": 4029.893827,
+      "KID": 1.391526,
+      "KMF": 419.464404,
+      "KRW": 1473.343018,
+      "KWD": 0.307488,
+      "KYD": 0.833333,
+      "KZT": 459.474983,
+      "LAK": 21932.916953,
+      "LBP": 89500.0,
+      "LKR": 317.892007,
+      "LRD": 183.908118,
+      "LSL": 16.526334,
+      "LYD": 6.34516,
+      "MAD": 9.241978,
+      "MDL": 17.310719,
+      "MGA": 4142.656831,
+      "MKD": 52.635978,
+      "MMK": 2099.54359,
+      "MNT": 3592.082139,
+      "MOP": 8.07249,
+      "MRU": 39.96765,
+      "MUR": 46.800901,
+      "MVR": 15.444051,
+      "MWK": 1741.036191,
+      "MXN": 17.375964,
+      "MYR": 3.952515,
+      "MZN": 63.636514,
+      "NAD": 16.526334,
+      "NGN": 1356.679784,
+      "NIO": 36.784517,
+      "NOK": 9.279046,
+      "NPR": 150.852,
+      "NZD": 1.691289,
+      "OMR": 0.384497,
+      "PAB": 1.0,
+      "PEN": 3.491582,
+      "PGK": 4.341144,
+      "PHP": 60.773759,
+      "PKR": 278.79003,
+      "PLN": 3.619427,
+      "PYG": 6302.591913,
+      "QAR": 3.64,
+      "RON": 4.336592,
+      "RSD": 100.051948,
+      "RUB": 74.926809,
+      "RWF": 1461.384622,
+      "SAR": 3.75,
+      "SBD": 7.933283,
+      "SCR": 14.74759,
+      "SDG": 465.428035,
+      "SEK": 9.210964,
+      "SGD": 1.273929,
+      "SHP": 0.738418,
+      "SLE": 24.757018,
+      "SLL": 24757.018467,
+      "SOS": 571.850756,
+      "SRD": 37.439898,
+      "SSP": 4629.711619,
+      "STN": 20.889332,
+      "SYP": 112.461773,
+      "SZL": 16.526334,
+      "THB": 32.342544,
+      "TJS": 9.451028,
+      "TMT": 3.500681,
+      "TND": 2.88887,
+      "TOP": 2.366072,
+      "TRY": 45.042174,
+      "TTD": 6.778949,
+      "TVD": 1.391526,
+      "TWD": 31.483418,
+      "TZS": 2607.946889,
+      "UAH": 44.079607,
+      "UGX": 3673.746957,
+      "UYU": 39.638168,
+      "UZS": 12119.803803,
+      "VES": 485.2251,
+      "VND": 26236.442787,
+      "VUV": 117.958365,
+      "WST": 2.692537,
+      "XAF": 559.285872,
+      "XCD": 2.7,
+      "XCG": 1.79,
+      "XDR": 0.728687,
+      "XOF": 559.285872,
+      "XPF": 101.745544,
+      "YER": 238.648722,
+      "ZAR": 16.526359,
+      "ZMW": 18.672424,
+      "ZWG": 25.1937,
+      "ZWL": 25.1937
+    }
+  },
+  "rankings": {
+    "top_projects": [
+      {
+        "name": "Mariachi Legends - A Combat Oriented Metroidvania",
+        "creator": "HALBERD STUDIOS",
+        "country": "MX",
+        "location": "Guadalajara, Mexico",
+        "currency": "MXN",
+        "pledged_original": 11069790.54,
+        "usd": 634178.6693188302,
+        "url": "https://www.kickstarter.com/projects/halberdstudios/mariachi-legends-a-combat-oriented-metroidvania"
+      },
+      {
+        "name": "Heart Forth, Alicia",
+        "creator": "Alonso Martin",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "USD",
+        "pledged_original": 232365.18,
+        "usd": 232365.18,
+        "url": "https://www.kickstarter.com/projects/alonsomartin/heart-forth-alicia"
+      },
+      {
+        "name": "Lonesome Village | Cute puzzle-filled life simulator",
+        "creator": "Ogre Pixel",
+        "country": "MX",
+        "location": "Aguascalientes, Mexico",
+        "currency": "MXN",
+        "pledged_original": 2149219.73,
+        "usd": 101788.0135616785,
+        "url": "https://www.kickstarter.com/projects/ogrepixel/lonesome-village"
+      },
+      {
+        "name": "9 Years of Shadows",
+        "creator": "HALBERD STUDIOS",
+        "country": "MX",
+        "location": "Guadalajara, Mexico",
+        "currency": "MXN",
+        "pledged_original": 1988905.66,
+        "usd": 80383.213373428,
+        "url": "https://www.kickstarter.com/projects/halberdstudios/9-years-of-shadows"
+      },
+      {
+        "name": "Glory Hunters: A unique Game Boy action-adventure RPG!",
+        "creator": "César Arminio",
+        "country": "MX",
+        "location": "Puebla, Mexico",
+        "currency": "MXN",
+        "pledged_original": 1344688.2,
+        "usd": 67109.972553972,
+        "url": "https://www.kickstarter.com/projects/98220550/glory-hunters-a-unique-game-boy-action-adventure-rpg"
+      },
+      {
+        "name": "A Tiny Sticker Tale | Relaxing tiny adventure about stickers",
+        "creator": "Ogre Pixel",
+        "country": "MX",
+        "location": "Aguascalientes, Mexico",
+        "currency": "MXN",
+        "pledged_original": 786080.8,
+        "usd": 45033.012592016,
+        "url": "https://www.kickstarter.com/projects/ogrepixel/a-tiny-sticker-tale"
+      },
+      {
+        "name": "Cosmo Knight ZiON",
+        "creator": "Zeichi Games",
+        "country": "MX",
+        "location": "Tepic, Mexico",
+        "currency": "MXN",
+        "pledged_original": 546661.0,
+        "usd": 32948.42285793,
+        "url": "https://www.kickstarter.com/projects/cosmoknightzion/cosmo-knight-zion"
+      },
+      {
+        "name": "Dungeons and Passion",
+        "creator": "DMQuetzalli",
+        "country": "MX",
+        "location": "Zapopan, Mexico",
+        "currency": "MXN",
+        "pledged_original": 500203.8,
+        "usd": 25621.023874446,
+        "url": "https://www.kickstarter.com/projects/dmquetzalli/dungeons-and-passion"
+      },
+      {
+        "name": "Deer Crusade: A Hand Crafted Maya Inspired 2D Platformer",
+        "creator": "Black Coffee Studio",
+        "country": "MX",
+        "location": "Mérida, Mexico",
+        "currency": "MXN",
+        "pledged_original": 419130.8,
+        "usd": 24327.617407016,
+        "url": "https://www.kickstarter.com/projects/jnrcrdpssrz/deer-crusade-a-hand-crafted-maya-inspired-2d-platformer"
+      },
+      {
+        "name": "Rain In The Abyss (A Beauty PixelArt Horror/Metroidvania)",
+        "creator": "José Alfredo Ramírez Muñoz",
+        "country": "MX",
+        "location": "Tulancingo, Mexico",
+        "currency": "MXN",
+        "pledged_original": 411349.8,
+        "usd": 23911.850257458,
+        "url": "https://www.kickstarter.com/projects/nuezware/rain-in-the-abyss-a-survivalhorror-metroidvania"
+      },
+      {
+        "name": "Eagle Knight Paradox",
+        "creator": "Playstorm Studios",
+        "country": "MX",
+        "location": "Saltillo, Mexico",
+        "currency": "MXN",
+        "pledged_original": 419646.8,
+        "usd": 19687.494619792,
+        "url": "https://www.kickstarter.com/projects/playstormstudios/eagle-knight-paradox"
+      },
+      {
+        "name": "Dreamshot Fantasia",
+        "creator": "Miracle",
+        "country": "MX",
+        "location": "Queretaro, Mexico",
+        "currency": "USD",
+        "pledged_original": 19062.0,
+        "usd": 19062.0,
+        "url": "https://www.kickstarter.com/projects/miracleppg/dreamshot-fantasia"
+      },
+      {
+        "name": "Vocaless - Rhythm Platformer",
+        "creator": "SleP16",
+        "country": "MX",
+        "location": "Sonora, Mexico",
+        "currency": "MXN",
+        "pledged_original": 322646.0,
+        "usd": 15888.55062638,
+        "url": "https://www.kickstarter.com/projects/sleepy16/vocaless-rhythm-platformer"
+      },
+      {
+        "name": "Broken Reality",
+        "creator": "Dynamic Media Triad",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "USD",
+        "pledged_original": 14681.01,
+        "usd": 14681.01,
+        "url": "https://www.kickstarter.com/projects/445840357/broken-reality-0"
+      },
+      {
+        "name": "Another Crusade",
+        "creator": "DragonVein Studios",
+        "country": "MX",
+        "location": "Guadalajara, Mexico",
+        "currency": "MXN",
+        "pledged_original": 301670.8,
+        "usd": 13532.074225972,
+        "url": "https://www.kickstarter.com/projects/dragonvein/another-crusade"
+      },
+      {
+        "name": "Neon City Riders: A Cyberpunk Turf Wars Action Adventure",
+        "creator": "Mecha Studios",
+        "country": "MX",
+        "location": "Veracruz, Mexico",
+        "currency": "MXN",
+        "pledged_original": 225740.0,
+        "usd": 12412.6841136,
+        "url": "https://www.kickstarter.com/projects/mechastudios/neon-city-riders-a-cyberpunk-turf-wars-action-adve"
+      },
+      {
+        "name": "Overbound 1.1 | Platform Adventures and Multiplayer",
+        "creator": "CosmicCatGames",
+        "country": "MX",
+        "location": "Toluca, Mexico",
+        "currency": "MXN",
+        "pledged_original": 200448.0,
+        "usd": 11883.3291648,
+        "url": "https://www.kickstarter.com/projects/cosmiccatgames/overbound-11-platform-adventures-and-multiplayer"
+      },
+      {
+        "name": "Pato Box - A full action duck fighting experience",
+        "creator": "Bromio",
+        "country": "MX",
+        "location": "Puebla, Mexico",
+        "currency": "MXN",
+        "pledged_original": 210700.0,
+        "usd": 10706.823743,
+        "url": "https://www.kickstarter.com/projects/1548341006/pato-box-a-full-action-duck-fighting-experience"
+      },
+      {
+        "name": "Witches and Butchers - A Gameboy Color Bullet Hell RPG!",
+        "creator": "Lobosandia",
+        "country": "MX",
+        "location": "Hermosillo, Mexico",
+        "currency": "MXN",
+        "pledged_original": 154270.0,
+        "usd": 9315.8778068,
+        "url": "https://www.kickstarter.com/projects/cuurian/witches-and-butchers-a-gameboy-color-action-rpg"
+      },
+      {
+        "name": "Lethal Attraction (Adult Videogame)",
+        "creator": "Medussa Software",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 173403.8,
+        "usd": 8535.613044858,
+        "url": "https://www.kickstarter.com/projects/medussasoftware/lethal-attraction-adult-videogame"
+      },
+      {
+        "name": "The Frozen Kingdom - a sword & sorcery BL visual novel",
+        "creator": "ManEaterGames",
+        "country": "MX",
+        "location": "Puebla, Mexico",
+        "currency": "MXN",
+        "pledged_original": 149063.8,
+        "usd": 8493.582282738,
+        "url": "https://www.kickstarter.com/projects/maneatergames/the-frozen-kingdom-a-sword-and-sorcery-bl-visual-novel"
+      },
+      {
+        "name": "PINCHIMONO THE VIDEOGAME",
+        "creator": "Ricardo Lozoya",
+        "country": "MX",
+        "location": "Chihuahua, Mexico",
+        "currency": "MXN",
+        "pledged_original": 160248.0,
+        "usd": 7999.63304184,
+        "url": "https://www.kickstarter.com/projects/pinchimono/pinchimono-the-videogame"
+      },
+      {
+        "name": "Delve Into Pawssion: Community Encore!",
+        "creator": "DMQuetzalli",
+        "country": "MX",
+        "location": "Jalisco, Mexico",
+        "currency": "MXN",
+        "pledged_original": 161307.0,
+        "usd": 7863.90659226,
+        "url": "https://www.kickstarter.com/projects/dmquetzalli/delve-into-pawssion-community-encore"
+      },
+      {
+        "name": "VR4E: Immersive learning.",
+        "creator": "La Malinche, Estudio VR",
+        "country": "MX",
+        "location": "Mérida, Mexico",
+        "currency": "MXN",
+        "pledged_original": 140796.8,
+        "usd": 7585.507854176,
+        "url": "https://www.kickstarter.com/projects/1506824399/vr4e-immersive-learning"
+      },
+      {
+        "name": "Dark Tales from México. PRELUDE. (Oct. 9 - 31)",
+        "creator": "BitAll Force",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 151696.8,
+        "usd": 7329.091330944,
+        "url": "https://www.kickstarter.com/projects/bitallforce/dark-tales-from-mexico-prelude"
+      },
+      {
+        "name": "The Overlap: Survival cosmic horror 2D sandbox",
+        "creator": "Back Pocket Games",
+        "country": "MX",
+        "location": "Monterrey, Mexico",
+        "currency": "MXN",
+        "pledged_original": 145946.8,
+        "usd": 6982.726861644,
+        "url": "https://www.kickstarter.com/projects/back-pocket-games/the-overlap-survival-cosmic-horror-2d-sandbox"
+      },
+      {
+        "name": "Design Hero",
+        "creator": "Akinaba",
+        "country": "MX",
+        "location": "Monterrey, Mexico",
+        "currency": "MXN",
+        "pledged_original": 121255.0,
+        "usd": 6837.9841421,
+        "url": "https://www.kickstarter.com/projects/1686713062/design-hero"
+      },
+      {
+        "name": "Tyr: Chains of Valhalla",
+        "creator": "Ennui Studio",
+        "country": "MX",
+        "location": "Monterrey, Mexico",
+        "currency": "MXN",
+        "pledged_original": 127150.0,
+        "usd": 6722.519677,
+        "url": "https://www.kickstarter.com/projects/175133819/tyr-chains-of-valhalla"
+      },
+      {
+        "name": "Uppercute",
+        "creator": "Martin Villarreal",
+        "country": "MX",
+        "location": "Monterrey, Mexico",
+        "currency": "MXN",
+        "pledged_original": 131923.0,
+        "usd": 6622.4686385,
+        "url": "https://www.kickstarter.com/projects/uppercute/uppercute"
+      },
+      {
+        "name": "Pocket Penguin: The Game Boy Cartdrige",
+        "creator": "Pablo Montes (Dog Biscuit)",
+        "country": "MX",
+        "location": "México, Mexico",
+        "currency": "MXN",
+        "pledged_original": 126159.8,
+        "usd": 6371.67546704,
+        "url": "https://www.kickstarter.com/projects/pocketpenguin/pocket-penguin-the-game-boy-cartdrige"
+      },
+      {
+        "name": "Rockstar Idol - a NSFW Rhythm game",
+        "creator": "Pandita Studio",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 110178.8,
+        "usd": 6135.162143772,
+        "url": "https://www.kickstarter.com/projects/edo0xff/rockstar-idol-relaunch"
+      },
+      {
+        "name": "Beacon The Awakening",
+        "creator": "Sheldrybox Studios",
+        "country": "MX",
+        "location": "Juarez, Mexico",
+        "currency": "MXN",
+        "pledged_original": 108838.0,
+        "usd": 6072.35935232,
+        "url": "https://www.kickstarter.com/projects/sheldrybox/beacon-the-awakening"
+      },
+      {
+        "name": "Elliot Quest",
+        "creator": "Ansimuz Games",
+        "country": "MX",
+        "location": "Guadalajara, Mexico",
+        "currency": "CAD",
+        "pledged_original": 5915.53,
+        "usd": 5648.6213455553,
+        "url": "https://www.kickstarter.com/projects/1571402711/elliot-quest"
+      },
+      {
+        "name": "The Best Place [Visual Novel]",
+        "creator": "Octopus Games",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 76958.8,
+        "usd": 3745.938036892,
+        "url": "https://www.kickstarter.com/projects/octopusgameserotic/the-best-place-visual-novel"
+      },
+      {
+        "name": "The Book of Tornaluna Cats: A Cozy Game of Care and Healing",
+        "creator": "Pandita Studio",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 62133.0,
+        "usd": 3304.35285669,
+        "url": "https://www.kickstarter.com/projects/edo0xff/the-book-of-tornaluna-cats"
+      },
+      {
+        "name": "Outsiders - Visual Novel",
+        "creator": "Midwest Games",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 58282.8,
+        "usd": 3232.411297068,
+        "url": "https://www.kickstarter.com/projects/midwestgames/outsiders-visual-novel"
+      },
+      {
+        "name": "Porcelana (Relaunch)",
+        "creator": "Pandita Studio",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 63023.8,
+        "usd": 3174.438219344,
+        "url": "https://www.kickstarter.com/projects/edo0xff/porcelana-relaunch"
+      },
+      {
+        "name": "Mislight - An Adventure Game With A Small Touch Of Thriller",
+        "creator": "Etherlight",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 60400.8,
+        "usd": 3120.678000936,
+        "url": "https://www.kickstarter.com/projects/etherlight/mislight-an-adventure-game-with-a-small-touch-of-thriller"
+      },
+      {
+        "name": "Transformando la tradición: Un videojuego único inspirador",
+        "creator": "mariela santiz sanchez",
+        "country": "MX",
+        "location": "Oxchuc, Mexico",
+        "currency": "MXN",
+        "pledged_original": 63720.0,
+        "usd": 3100.4285004,
+        "url": "https://www.kickstarter.com/projects/juegosoxchuc/transformando-la-tradicion-un-videojuego-unico-inspirador"
+      },
+      {
+        "name": "Hollo Buster - A Pacapillar Videogame",
+        "creator": "Cathalla",
+        "country": "MX",
+        "location": "Monterrey, Mexico",
+        "currency": "MXN",
+        "pledged_original": 56720.0,
+        "usd": 3030.0975416,
+        "url": "https://www.kickstarter.com/projects/887725651/hollo-buster-a-pacapillar-videogame"
+      },
+      {
+        "name": "Moons of True Magic - A JRPG game (Chapter 1)",
+        "creator": "Filthy Peasants",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 51763.8,
+        "usd": 3017.734294608,
+        "url": "https://www.kickstarter.com/projects/motm/moons-of-true-magic-a-jrpg-game-chapter-1"
+      },
+      {
+        "name": "Hot Coffe Shop - An anime +18 NSFW game",
+        "creator": "Eliza Pecina",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 56772.8,
+        "usd": 2905.216894832,
+        "url": "https://www.kickstarter.com/projects/chocobits/hot-coffe-shop-a-cute-and-erotic-game"
+      },
+      {
+        "name": "Tits and Fantasy",
+        "creator": "Luis Eduardo Sanchez Mora",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 48620.0,
+        "usd": 2657.807438,
+        "url": "https://www.kickstarter.com/projects/titsandshadows/tits-and-fantasy"
+      },
+      {
+        "name": "Sex City Adult Videogame",
+        "creator": "G3ddon Ideas",
+        "country": "MX",
+        "location": "Mexico, Mexico",
+        "currency": "MXN",
+        "pledged_original": 52393.8,
+        "usd": 2578.071508908,
+        "url": "https://www.kickstarter.com/projects/depresionapp/sex-city-adult-videogame"
+      },
+      {
+        "name": "Città nel mare",
+        "creator": "Kurusai Studios",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 50638.8,
+        "usd": 2492.675687256,
+        "url": "https://www.kickstarter.com/projects/citta-nel-mare/citta-nel-mare"
+      },
+      {
+        "name": "PARADISE LOST - SCI-FI SURVIVAL HORROR GAME",
+        "creator": "Juan Pedraza",
+        "country": "MX",
+        "location": "Campeche, Mexico",
+        "currency": "MXN",
+        "pledged_original": 44150.0,
+        "usd": 2363.434268,
+        "url": "https://www.kickstarter.com/projects/jeprdev/paradise-lost-sci-fi-survival-horror-game"
+      },
+      {
+        "name": "The Tale of Nanuk- The Ocean Fairy (Take Two)",
+        "creator": "Pablo Montes (Dog Biscuit)",
+        "country": "MX",
+        "location": "Mexico City, Mexico",
+        "currency": "MXN",
+        "pledged_original": 37608.0,
+        "usd": 2285.70028776,
+        "url": "https://www.kickstarter.com/projects/pocketpenguin/the-tale-of-nanuk-the-ocean-fairy-take-two"
+      },
+      {
+        "name": "Videojuego AXOL",
+        "creator": "Narciso Alejo Gutierrez",
+        "country": "MX",
+        "location": "Puerto Vallarta, Mexico",
+        "currency": "MXN",
+        "pledged_original": 36152.8,
+        "usd": 1891.21262012,
+        "url": "https://www.kickstarter.com/projects/godshisho-97/videojuego-axol"
+      },
+      {
+        "name": "Shadowbox VR: A rhythm based boxing game",
+        "creator": "Bixelium Entertainment",
+        "country": "MX",
+        "location": "Ciudad Juarez, Mexico",
+        "currency": "USD",
+        "pledged_original": 1635.0,
+        "usd": 1635.0,
+        "url": "https://www.kickstarter.com/projects/shadowboxvr/shadowbox-vr-a-rhythm-based-boxing-game"
+      },
+      {
+        "name": "Boney's research on Humans!",
+        "creator": "Carlos Makes Games",
+        "country": "MX",
+        "location": "Reynosa, Mexico",
+        "currency": "MXN",
+        "pledged_original": 30383.8,
+        "usd": 1506.513574802,
+        "url": "https://www.kickstarter.com/projects/humanstookmn/boneys-research-on-humans"
+      }
+    ],
+    "top_creators": [
+      {
+        "creator": "HALBERD STUDIOS",
+        "projects": 2,
+        "usd_total": 714561.8826922582,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Alonso Martin",
+        "projects": 1,
+        "usd_total": 232365.18,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Ogre Pixel",
+        "projects": 2,
+        "usd_total": 146821.0261536945,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "César Arminio",
+        "projects": 1,
+        "usd_total": 67109.972553972,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "DMQuetzalli",
+        "projects": 2,
+        "usd_total": 33484.930466706,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Zeichi Games",
+        "projects": 1,
+        "usd_total": 32948.42285793,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Black Coffee Studio",
+        "projects": 1,
+        "usd_total": 24327.617407016,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "José Alfredo Ramírez Muñoz",
+        "projects": 1,
+        "usd_total": 23911.850257458,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Playstorm Studios",
+        "projects": 1,
+        "usd_total": 19687.494619792,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Miracle",
+        "projects": 1,
+        "usd_total": 19062.0,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "SleP16",
+        "projects": 1,
+        "usd_total": 15888.55062638,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Dynamic Media Triad",
+        "projects": 1,
+        "usd_total": 14681.01,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "DragonVein Studios",
+        "projects": 1,
+        "usd_total": 13532.074225972,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Pandita Studio",
+        "projects": 3,
+        "usd_total": 12613.953219805999,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Mecha Studios",
+        "projects": 1,
+        "usd_total": 12412.6841136,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "CosmicCatGames",
+        "projects": 1,
+        "usd_total": 11883.3291648,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Bromio",
+        "projects": 1,
+        "usd_total": 10706.823743,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Pablo Montes (Dog Biscuit)",
+        "projects": 3,
+        "usd_total": 9429.305883387999,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Lobosandia",
+        "projects": 1,
+        "usd_total": 9315.8778068,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Medussa Software",
+        "projects": 1,
+        "usd_total": 8535.613044858,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "ManEaterGames",
+        "projects": 1,
+        "usd_total": 8493.582282738,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Ricardo Lozoya",
+        "projects": 1,
+        "usd_total": 7999.63304184,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "La Malinche, Estudio VR",
+        "projects": 1,
+        "usd_total": 7585.507854176,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "BitAll Force",
+        "projects": 1,
+        "usd_total": 7329.091330944,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Back Pocket Games",
+        "projects": 1,
+        "usd_total": 6982.726861644,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Akinaba",
+        "projects": 1,
+        "usd_total": 6837.9841421,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Ennui Studio",
+        "projects": 1,
+        "usd_total": 6722.519677,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Martin Villarreal",
+        "projects": 1,
+        "usd_total": 6622.4686385,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Sheldrybox Studios",
+        "projects": 1,
+        "usd_total": 6072.35935232,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Ansimuz Games",
+        "projects": 1,
+        "usd_total": 5648.6213455553,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Octopus Games",
+        "projects": 1,
+        "usd_total": 3745.938036892,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Midwest Games",
+        "projects": 1,
+        "usd_total": 3232.411297068,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Etherlight",
+        "projects": 1,
+        "usd_total": 3120.678000936,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "mariela santiz sanchez",
+        "projects": 1,
+        "usd_total": 3100.4285004,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Luis Eduardo Sanchez Mora",
+        "projects": 2,
+        "usd_total": 3065.270112192,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Cathalla",
+        "projects": 1,
+        "usd_total": 3030.0975416,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Filthy Peasants",
+        "projects": 1,
+        "usd_total": 3017.734294608,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Eliza Pecina",
+        "projects": 1,
+        "usd_total": 2905.216894832,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Juan Pedraza",
+        "projects": 2,
+        "usd_total": 2785.8859007,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "G3ddon Ideas",
+        "projects": 1,
+        "usd_total": 2578.071508908,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Kurusai Studios",
+        "projects": 1,
+        "usd_total": 2492.675687256,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Narciso Alejo Gutierrez",
+        "projects": 1,
+        "usd_total": 1891.21262012,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Bixelium Entertainment",
+        "projects": 1,
+        "usd_total": 1635.0,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Carlos Makes Games",
+        "projects": 1,
+        "usd_total": 1506.513574802,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "JUAN ENRIQUE PEDRAZA REJON",
+        "projects": 2,
+        "usd_total": 1343.6956675,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Charlie Atom",
+        "projects": 1,
+        "usd_total": 943.296146,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Heli Hernandez",
+        "projects": 2,
+        "usd_total": 936.887558128,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "JEPR DEV",
+        "projects": 2,
+        "usd_total": 824.138159412,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Team Robot Black Hat",
+        "projects": 1,
+        "usd_total": 777.0608895,
+        "mxn_total": 0.0
+      },
+      {
+        "creator": "Adrián Tomé Rodríguez",
+        "projects": 2,
+        "usd_total": 702.285326208,
+        "mxn_total": 0.0
+      }
+    ]
+  }
+}
