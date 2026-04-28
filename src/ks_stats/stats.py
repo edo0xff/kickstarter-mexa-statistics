@@ -60,6 +60,7 @@ class TopProjectsMX:
                     "pledged_original": rec.pledged_original,
                     "usd": rec.usd_pledged,
                     "url": rec.project_url,
+                    "project_image_url": rec.project_image_url,
                 }
             )
         return rows
@@ -81,6 +82,8 @@ class TopCreatorsMX:
                     "projects": 0,
                     "usd_total": 0.0,
                     "mxn_total": 0.0,
+                    "creator_url": f"https://www.kickstarter.com/profile/{rec.creator_slug}" if rec.creator_slug else "",
+                    "creator_photo_url": rec.creator_photo_url,
                 }
             acc[key]["projects"] += 1
             acc[key]["usd_total"] += rec.usd_pledged

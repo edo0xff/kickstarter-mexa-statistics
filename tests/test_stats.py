@@ -24,6 +24,8 @@ def _record(
         currency="USD",
         usd_pledged=usd,
         project_url=f"https://example.com/{pid}",
+        project_image_url=f"https://img.example.com/{pid}.jpg",
+        creator_photo_url=f"https://avatar.example.com/{creator.lower().replace(' ', '-')}.jpg",
     )
 
 
@@ -47,6 +49,7 @@ def test_top_projects_sorted_by_usd() -> None:
     ]
     rows = TopProjectsMX().compute(data, StatsContext(top_n=2))
     assert [r["name"] for r in rows] == ["p2", "p3"]
+    assert rows[0]["project_image_url"] == "https://img.example.com/2.jpg"
 
 
 def test_top_creators_aggregates_multiple_projects() -> None:
@@ -59,3 +62,5 @@ def test_top_creators_aggregates_multiple_projects() -> None:
     assert rows[0]["creator"] == "A Studio"
     assert rows[0]["projects"] == 2
     assert rows[0]["usd_total"] == 350
+    assert rows[0]["creator_url"] == "https://www.kickstarter.com/profile/a-studio"
+    assert rows[0]["creator_photo_url"] == "https://avatar.example.com/a-studio.jpg"

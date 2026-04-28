@@ -4,6 +4,18 @@ from dataclasses import dataclass
 from typing import Any
 
 
+def _pick_image_url(value: Any) -> str:
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        # Prefer medium-size image when available.
+        for key in ("med", "medium", "full", "small", "thumb", "little"):
+            candidate = value.get(key)
+            if isinstance(candidate, str) and candidate:
+                return candidate
+    return ""
+
+
 @dataclass(slots=True)
 class ProjectRecord:
     project_id: int
@@ -19,6 +31,8 @@ class ProjectRecord:
     currency: str
     usd_pledged: float
     project_url: str
+    project_image_url: str = ""
+    creator_photo_url: str = ""
 
     @classmethod
     def from_discover_project(cls, data: dict[str, Any]) -> "ProjectRecord":
@@ -27,6 +41,8 @@ class ProjectRecord:
         location = data.get("location") or {}
         urls = data.get("urls") or {}
         web_urls = urls.get("web") or {}
+        photo = data.get("photo")
+        creator_photo = creator.get("avatar")
 
         return cls(
             project_id=int(data.get("id", 0)),
@@ -42,4 +58,6 @@ class ProjectRecord:
             currency=str(data.get("currency") or ""),
             usd_pledged=float(data.get("usd_pledged") or 0.0),
             project_url=str(web_urls.get("project") or ""),
+            project_image_url=_pick_image_url(photo),
+            creator_photo_url=_pick_image_url(creator_photo),
         )
