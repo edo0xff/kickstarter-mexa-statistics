@@ -91,6 +91,12 @@ class TopProjectsMX:
                     "usd": rec.usd_pledged,
                     "mxn": pledged_mxn,
                     "url": rec.project_url,
+                    "launched_at_iso": rec.launched_at_iso,
+                    "launched_at_epoch": rec.launched_at_epoch,
+                    "deadline_iso": rec.deadline_iso,
+                    "deadline_epoch": rec.deadline_epoch,
+                    "updated_at_iso": rec.updated_at_iso,
+                    "updated_at_epoch": rec.updated_at_epoch,
                     "project_image_url": rec.project_image_url,
                 }
             )

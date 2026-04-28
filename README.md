@@ -41,6 +41,14 @@ Exportar a JSON:
 .\.venv\Scripts\ks-stats.exe run --output-format json --output-file .\artifacts\ks_stats.json
 ```
 
+Campos de fecha exportados por proyecto (en `rankings.top_projects`):
+
+- `launched_at_iso` y `launched_at_epoch`: inicio de campana.
+- `deadline_iso` y `deadline_epoch`: fecha final.
+- `updated_at_iso` y `updated_at_epoch`: ultima actualizacion.
+
+Si Kickstarter no envia algun valor para un proyecto, se exporta como `null`.
+
 Opciones utiles:
 
 - `--top-n`: cantidad N para ambos rankings (default 20).
