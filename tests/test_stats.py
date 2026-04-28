@@ -41,15 +41,24 @@ def test_filter_scope_only_successful_videogames_mx() -> None:
     assert result[0].project_id == 1
 
 
-def test_top_projects_sorted_by_usd() -> None:
+def test_top_projects_sorted_by_mxn_converted_from_original_currency() -> None:
     data = [
         _record(1, "A", 100),
-        _record(2, "B", 900),
+        _record(2, "B", 600),
         _record(3, "C", 500),
     ]
-    rows = TopProjectsMX().compute(data, StatsContext(top_n=2))
-    assert [r["name"] for r in rows] == ["p2", "p3"]
-    assert rows[0]["project_image_url"] == "https://img.example.com/2.jpg"
+    data[0].currency = "MXN"
+    data[0].pledged_original = 12000
+    data[1].currency = "USD"
+    data[1].pledged_original = 600
+    data[2].currency = "USD"
+    data[2].pledged_original = 500
+
+    rows = TopProjectsMX().compute(data, StatsContext(top_n=2, rates={"MXN": 20.0, "USD": 1.0}))
+    assert [r["name"] for r in rows] == ["p1", "p2"]
+    assert rows[0]["mxn"] == 12000
+    assert rows[1]["mxn"] == 12000
+    assert rows[0]["project_image_url"] == "https://img.example.com/1.jpg"
 
 
 def test_top_creators_aggregates_multiple_projects() -> None:
@@ -58,9 +67,28 @@ def test_top_creators_aggregates_multiple_projects() -> None:
         _record(2, "A Studio", 250),
         _record(3, "B Studio", 300),
     ]
-    rows = TopCreatorsMX().compute(data, StatsContext(top_n=5))
+    rows = TopCreatorsMX().compute(data, StatsContext(top_n=5, rates={"MXN": 20.0, "USD": 1.0}))
     assert rows[0]["creator"] == "A Studio"
     assert rows[0]["projects"] == 2
     assert rows[0]["usd_total"] == 350
+    assert rows[0]["mxn_total"] == 7000
     assert rows[0]["creator_url"] == "https://www.kickstarter.com/profile/a-studio"
     assert rows[0]["creator_photo_url"] == "https://avatar.example.com/a-studio.jpg"
+
+
+def test_top_creators_sorted_by_mxn_total_with_currency_conversion() -> None:
+    data = [
+        _record(1, "A Studio", 200),
+        _record(2, "A Studio", 200),
+        _record(3, "B Studio", 300),
+    ]
+    data[0].currency = "MXN"
+    data[0].pledged_original = 7000
+    data[1].currency = "MXN"
+    data[1].pledged_original = 7000
+    data[2].currency = "USD"
+    data[2].pledged_original = 650
+
+    rows = TopCreatorsMX().compute(data, StatsContext(top_n=5, rates={"MXN": 20.0, "USD": 1.0}))
+    assert rows[0]["creator"] == "A Studio"
+    assert rows[0]["mxn_total"] == 14000

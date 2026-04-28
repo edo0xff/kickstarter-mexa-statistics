@@ -65,7 +65,7 @@ def run(
     rates = fx.get_rates()
     mxn_per_usd = float(rates.get("MXN", 0.0))
 
-    results = compute_all(records, top_n=top_n, country_code=country_code)
+    results = compute_all(records, top_n=top_n, country_code=country_code, rates=rates)
     top_projects = results.get("top_projects_mx", [])
     top_creators = results.get("top_creators_mx", [])
 

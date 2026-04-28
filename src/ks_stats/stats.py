@@ -10,6 +10,32 @@ from .models import ProjectRecord
 class StatsContext:
     top_n: int
     country_code: str = "MX"
+    rates: dict[str, float] | None = None
+
+
+def pledged_to_mxn(pledged_original: float, currency: str, rates: dict[str, float] | None) -> float:
+    if pledged_original <= 0:
+        return 0.0
+
+    cur = currency.upper()
+    fx = rates or {}
+
+    if cur == "MXN":
+        return pledged_original
+
+    mxn_rate = float(fx.get("MXN") or 0.0)
+    if mxn_rate <= 0:
+        return 0.0
+
+    if cur == "USD":
+        return pledged_original * mxn_rate
+
+    cur_rate = float(fx.get(cur) or 0.0)
+    if cur_rate <= 0:
+        return 0.0
+
+    usd_amount = pledged_original / cur_rate
+    return usd_amount * mxn_rate
 
 
 class Statistic(Protocol):
@@ -47,9 +73,13 @@ class TopProjectsMX:
 
     def compute(self, records: list[ProjectRecord], ctx: StatsContext) -> list[dict[str, Any]]:
         scope = filter_target_scope(records, country_code=ctx.country_code)
-        scope.sort(key=lambda r: r.usd_pledged, reverse=True)
+        scope.sort(
+            key=lambda r: pledged_to_mxn(r.pledged_original, r.currency, ctx.rates),
+            reverse=True,
+        )
         rows: list[dict[str, Any]] = []
         for rec in scope[: ctx.top_n]:
+            pledged_mxn = pledged_to_mxn(rec.pledged_original, rec.currency, ctx.rates)
             rows.append(
                 {
                     "name": rec.name,
@@ -59,6 +89,7 @@ class TopProjectsMX:
                     "currency": rec.currency,
                     "pledged_original": rec.pledged_original,
                     "usd": rec.usd_pledged,
+                    "mxn": pledged_mxn,
                     "url": rec.project_url,
                     "project_image_url": rec.project_image_url,
                 }
@@ -87,9 +118,10 @@ class TopCreatorsMX:
                 }
             acc[key]["projects"] += 1
             acc[key]["usd_total"] += rec.usd_pledged
+            acc[key]["mxn_total"] += pledged_to_mxn(rec.pledged_original, rec.currency, ctx.rates)
 
         rows = list(acc.values())
-        rows.sort(key=lambda r: r["usd_total"], reverse=True)
+        rows.sort(key=lambda r: r["mxn_total"], reverse=True)
         return rows[: ctx.top_n]
 
 
@@ -97,8 +129,9 @@ def compute_all(
     records: list[ProjectRecord],
     top_n: int,
     country_code: str = "MX",
+    rates: dict[str, float] | None = None,
 ) -> dict[str, list[dict[str, Any]]]:
-    ctx = StatsContext(top_n=top_n, country_code=country_code)
+    ctx = StatsContext(top_n=top_n, country_code=country_code, rates=rates)
     out: dict[str, list[dict[str, Any]]] = {}
     for stat in STAT_REGISTRY:
         out[stat.key] = stat.compute(records, ctx)

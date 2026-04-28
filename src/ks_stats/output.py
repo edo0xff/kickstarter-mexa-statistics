@@ -38,7 +38,7 @@ def print_top_projects(console: Console, rows: list[dict[str, Any]], rates_mxn_p
 
     for idx, row in enumerate(rows, start=1):
         usd = float(row["usd"])
-        mxn = usd * rates_mxn_per_usd
+        mxn = float(row.get("mxn") or (usd * rates_mxn_per_usd))
         table.add_row(
             str(idx),
             str(row["name"]),
@@ -63,7 +63,7 @@ def print_top_creators(console: Console, rows: list[dict[str, Any]], rates_mxn_p
 
     for idx, row in enumerate(rows, start=1):
         usd = float(row["usd_total"])
-        mxn = usd * rates_mxn_per_usd
+        mxn = float(row.get("mxn_total") or (usd * rates_mxn_per_usd))
         table.add_row(
             str(idx),
             str(row["creator"]),
