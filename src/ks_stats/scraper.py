@@ -13,6 +13,14 @@ from .models import ProjectRecord
 
 
 DISCOVER_URL = "https://www.kickstarter.com/discover/advanced.json"
+PROXIES = {
+    "http": "http://47.91.65.23:3128",
+    "http": "http://195.114.209.50:80",
+    "http": "http://80.74.54.148:3128",
+    "http": "http://151.185.58.17:80",
+    "http": "http://147.78.1.156:3128",
+    "http": "http://45.194.3.119:8080",
+}
 
 
 class ScrapeBlockedError(RuntimeError):
@@ -104,7 +112,7 @@ class KickstarterDiscoverScraper:
 
             for client in (self.session, self.fallback_session):
                 try:
-                    resp = client.get(url, params=params, timeout=self.config.timeout_s)
+                    resp = client.get(url, params=params, timeout=self.config.timeout_s, proxies=PROXIES)
                 except requests.RequestException:
                     continue
 
