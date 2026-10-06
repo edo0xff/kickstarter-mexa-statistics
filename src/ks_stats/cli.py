@@ -11,7 +11,7 @@ from .output import print_chart, print_summary, print_top_creators, print_top_pr
 from .scraper import ScrapeBlockedError, ScrapeConfig, KickstarterDiscoverScraper
 from .stats import compute_all, filter_target_scope
 
-app = typer.Typer(add_completion=False, help="CLI no interactiva para estadisticas de Kickstarter.")
+app = typer.Typer(add_completion=False, help="CLI no interactiva para estadisticas de Kickstarter. v0.1.0")
 
 
 @app.callback()
